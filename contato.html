@@ -1,0 +1,240 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Template para o carousel Bootstrap</title>
+
+    <!-- Principal CSS do Bootstrap -->
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- Estilos customizados para esse template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <img src="./img_car/logo_oficial.jpg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="empresa.html">Empresa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+            </ul>
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar" aria-label="Pesquise">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+
+    <main role="main">
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="first-slide" src="./img_car/empresa3.jpg" alt="First slide">
+            <div class="container">
+              <div class="carousel-caption text-center">
+                <h1>CONTATO E LOCALIZAÇÃO</h1>
+               </div>
+            </div>
+          </div>
+       </div>
+
+
+      <!-- Mensagens de marketing e outras featurezinhas
+      ================================================== -->
+      <!-- Envolve o resto da página em outro container, para centralizar todo o conteúdo. -->
+
+      <div class="container marketing">
+
+        <!-- Três colunas de texto, abaixo do carousel -->
+        <header>
+            <div class="collapse bg-dark" id="navbarHeader">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-8 col-md-7 py-4">
+                     <h4 class="text-white">Sobre</h4>
+                    <p class="text-muted">Adicione alguma informação sobre o álbum abaixo (autor ou qualquer outro background). Faça essas informações terem algumas frases, para a galera ter algumas informações que besliscar. Além disso, use link nelas para as redes sociais ou informações de contato.</p>
+                  </div>
+                  <div class="col-sm-4 offset-md-1 py-4">
+                    <h4 class="text-white">Contato</h4>
+                    <ul class="list-unstyled">
+                      <li><a href="#" class="text-white">Me siga no Twitter</a></li>
+                      <li><a href="#" class="text-white">Curta no Facebook</a></li>
+                      <li><a href="#" class="text-white">Me envie um e-mail</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </header>
+          <!--Fim do carousel-->
+      <br>
+       
+        <br>
+   <div class="container">
+        <div class="row featurette">
+         
+            <h2 class="featurette-heading">Formulário de contato</h2>
+             </div>
+             <hr class="featurette">
+          <div class="col-md-8 order-md-1">
+            <form class="needs-validation" novalidate>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="primeiroNome">Nome</label>
+                  <input type="text" class="form-control" id="primeiroNome" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    É obrigatório inserir um nome válido.
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="sobrenome">Sobrenome</label>
+                  <input type="text" class="form-control" id="sobrenome" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    É obrigatório inserir um sobre nome válido.
+                  </div>
+                </div>
+              </div>
+  
+              <div class="mb-3">
+                <label for="apelido">Nome de usuário</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">@</span>
+                  </div>
+                  <input type="text" class="form-control" id="usuario" placeholder="Usuário" required>
+                  <div class="invalid-feedback" style="width: 100%;">
+                    Seu nome de usuário é obrigatório.
+                  </div>
+                </div>
+              </div>
+  
+              <div class="mb-3">
+                <label for="email">Email <span class="text-muted">(Opcional)</span></label>
+                <input type="email" class="form-control" id="email" placeholder="seu_email@exemplo.com">
+                <div class="invalid-feedback">
+                  Por favor, insira um endereço de e-mail válido, para atualizações de entrega.
+                </div>
+              </div>
+  
+              <div class="mb-3">
+                <label for="endereco">Endereço</label>
+                <input type="text" class="form-control" id="endereco" placeholder="Rua dos bobos, nº 0" required>
+                <div class="invalid-feedback">
+                  Por favor, insira seu endereço de entrega.
+                </div>
+              </div>
+  
+              <div class="mb-3">
+                <label for="endereco2">Endereço 2 <span class="text-muted">(Opcional)</span></label>
+                <input type="text" class="form-control" id="endereco2" placeholder="Apartamento ou casa">
+              </div>
+  
+              <div class="row">
+                <div class="col-md-5 mb-3">
+                  <label for="pais">País</label>
+                  <select class="custom-select d-block w-100" id="pais" required>
+                    <option value="">Escolha...</option>
+                    <option>Brasil</option>
+                    <option>Áustria</option>
+                    <option>Estados Unidos</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Por favor, escolha um país válido.
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="estado">Estado</label>
+                  <select class="custom-select d-block w-100" id="estado" required>
+                    <option value="">Escolha...</option>
+                    <option>Santa Catarina</option>
+                    <option>Rio de Janeiro</option>
+                    <option>Paraná</option>
+                    <option>Acre</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Por favor, insira um estado válido.
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="cep">CEP</label>
+                  <input type="text" class="form-control" id="cep" placeholder="" required>
+                  <div class="invalid-feedback">
+                    É obrigatório inserir um CEP.
+                  </div>
+                </div>
+              </div>
+             </div>
+        </div>
+    <hr class="featurette-divider">
+    <div class="row featurette" id="mapa_da_mina">
+      <div class="col-md-7">
+        <h3 class="featurette-heading">CONTATO E LOCALIZAÇÃO</h3>
+
+        <li><strong>Endereço:</strong></li> 
+        Avenue Homer Simpson, 2541 <br>
+        Rua interna Oscar Brito, 27 <br>
+        North Caroline - USA <br>
+        Postal Code: 22775-002 <br>
+        <br>
+        <li><strong>Telefone</strong></li>
+        +55(21)99696-7788 <br>
+        +94(389) 92333-223 <br>
+            
+      </div>
+      <div class="col-md-5">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12113474.525903573!2d-102.64275179999997!3d42.16331210000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883d43b7ecaa605d%3A0x438ffe2178520db0!2sBrembo%20North%20America%20Inc!5e0!3m2!1spt-BR!2sbr!4v1660605455594!5m2!1spt-BR!2sbr" 
+        width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+<!-- /FIM DAS FEATUREZINHAS *-* -->
+      </div><!-- /.container -->
+      <hr>
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Voltar ao topo</a></p>
+        <p>&copy; Daniel Campos Master DEV., 2022 &middot; <a href="https://www.brembo.com/en">Distribuido por BREMBO</a></p>
+      </footer>
+    </main>
+
+    <!-- Principal JavaScript do Bootstrap
+    ================================================== -->
+    <!-- Foi colocado no final para a página carregar mais rápido -->
+    <script src="./jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <!-- Só faz o nossos placeholders de imagens funcionarem. Não precisar copiar a próxima linha! -->
+    <script src="./holder.min.js"></script>
+  </body>
+</html>
